@@ -1,0 +1,156 @@
+.header {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  padding: 0 1rem;
+  width: 100%;
+  font-weight: 700;
+  background-color: #fff;
+  z-index: 9;
+
+  &--scroll {
+    position: fixed;
+    box-shadow: 1px 0 10px 0 rgba(0, 0, 0, 0.25);
+    animation: headerScroll 1s forwards;
+  }
+
+  .container {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .logo {
+    &-img {
+      margin: 1rem 0;
+      width: 18rem;
+      height: 5rem;
+    }
+  }
+
+  &-navbar {
+    text-align: right;
+  }
+
+  &-search {
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    width: 2.7rem;
+  }
+
+  &-link {
+    margin: 0 2rem;
+    font-size: 1.5rem;
+    color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+      color: #333;
+    }
+  }
+
+  &-burger {
+    position: relative;
+    display: inline-block;
+    width: 2.5rem;
+    height: 1.4rem;
+    cursor: pointer;
+
+    &__layer {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      border-top: 2px solid #333;
+      transition: 0.3s;
+    }
+
+    &__top {
+      top: 0;
+
+      &--onclick {
+        top: 0.7rem;
+        transform: rotate(45deg);
+      }
+    }
+
+    &__middle {
+      top: 0.7rem;
+
+      &--onclick {
+        opacity: 0;
+      }
+    }
+
+    &__bottom {
+      top: 1.4rem;
+
+      &--onclick {
+        top: 0.7rem;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  &-list {
+    position: absolute;
+    left: 0;
+    top: 200%;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    width: 100%;
+    font-size: 1.5rem;
+    border-top: 1px solid #eee;
+    background-color: #fff;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+
+    &--onclick {
+      top: 100%;
+      opacity: 1;
+      visibility: visible;
+      z-index: 9;
+    }
+
+    &-block {
+      padding: 1.5rem 0;
+
+      a {
+        display: table;
+        margin: 2rem 0 1.5rem 2rem;
+        color: #333;
+        text-decoration: none;
+      }
+
+      &.current {
+        summary {
+          color: #f84d55;
+        }
+      }
+    }
+
+    &-summary {
+      position: relative;
+      list-style: none;
+      color: #666;
+
+      &__button {
+        position: absolute;
+        right: 2rem;
+        padding: 0.5rem 0.9rem;
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        background-color: #f84d55;
+        transition: background-color 0.5s;
+
+        &:hover {
+          background-color: #232d47;
+        }
+      }
+    }
+  }
+}

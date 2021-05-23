@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Kovalskyi Eugene" />
+    <title>Ninja</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div class="sidebar d-none d-xl-block">
+      <a href="#" class="sidebar-logo">
+        <img src="img/logo.png" alt="image" />
+      </a>
+      <p class="sidebar-text">
+        Adipisicing elit, sed do Lorem ipsum dolor sit amet, consectetur Nulla frin gilla purus at
+        leo dignissim
+      </p>
+      <h2 class="sidebar-header">Contact Us</h2>
+      <a href="#" class="sidebar-text">Phone: (999) 000-122-233</a>
+      <a href="#" class="sidebar-text">Email: username@domain.com</a>
+      <a href="#" class="sidebar-text"
+        >Location: 250 Authors / 500 Posts 123 state, South America, 205</a
+      >
+      <h2 class="sidebar-header">Follow Us</h2>
+      <div class="sidebar-social">
+        <a href="#" class="sidebar-social__link">
+          <img src="img/sidebar/1.svg" alt="image" />
+        </a>
+        <a href="#" class="sidebar-social__link">
+          <img src="img/sidebar/2.svg" alt="image" />
+        </a>
+        <a href="#" class="sidebar-social__link">
+          <img src="img/sidebar/3.svg" alt="image" />
+        </a>
+        <a href="# " class="sidebar-social__link">
+          <img src="img/sidebar/4.svg" alt="image" />
+        </a>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <a class="logo" href="#"><img class="logo-img" src="img/logo.png" alt="image" /></a>
+          </div>
+          <div class="col-8 align-self-center">
+            <nav class="header-navbar">
+              <img class="header-search" src="img/main/search-icon.svg" alt="image" />
+              <a href="#" class="header-link">Start project</a>
+              <div class="header-burger">
+                <span class="header-burger__layer header-burger__top"></span>
+                <span class="header-burger__layer header-burger__middle"></span>
+                <span class="header-burger__layer header-burger__bottom"></span>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="header-list">
+        <details class="header-list-block current">
+          <summary class="header-list-summary">
+            Home<button class="header-list-summary__button">&#8897;</button>
+          </summary>
+          <div class="header-list-content">
+            <a href="#">Home 1</a>
+            <a href="#">Home 2</a>
+          </div>
+        </details>
+        <details class="header-list-block">
+          <summary class="header-list-summary">
+            Pages<button class="header-list-summary__button">&#8897;</button>
+          </summary>
+          <div class="header-list-content">
+            <a href="#">About</a>
+            <a href="#">Our Team</a>
+            <a href="#">Tean Details</a>
+            <a href="#">Contact</a>
+            <a href="#">Faq`s</a>
+            <a href="#">Pricing</a>
+            <a href="#">Quote</a>
+            <a href="#">404 Page</a>
+          </div>
+        </details>
+        <details class="header-list-block">
+          <summary class="header-list-summary">
+            Services<button class="header-list-summary__button">&#8897;</button>
+          </summary>
+          <div class="header-list-content">
+            <a href="#">Our Services</a>
+            <a href="#">Web Design</a>
+            <a href="#">Web Development</a>
+            <a href="#">Search Engine Optimization</a>
+            <a href="#">Marketing Analysis</a>
+          </div>
+        </details>
+        <details class="header-list-block">
+          <summary class="header-list-summary">
+            Projects<button class="header-list-summary__button">&#8897;</button>
+          </summary>
+          <div class="header-list-content">
+            <a href="#">Our Project 1</a>
+            <a href="#">Our Project 2</a>
+            <a href="#">Project Simple</a>
+          </div>
+        </details>
+        <details class="header-list-block">
+          <summary class="header-list-summary">
+            Blogs<button class="header-list-summary__button">&#8897;</button>
+          </summary>
+          <div class="header-list-content">
+            <a href="#">Our Blog 1</a>
+            <a href="#">Our Blog 2</a>
+            <a href="#">Blog Standart</a>
+            <a href="#">Blog Details 1</a>
+            <a href="#">Blog Details 2</a>
+          </div>
+        </details>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <div class="main-header">
+          <div class="row">
+            <div class="col-4">
+              <a class="logo" href="#"><img class="logo-img" src="img/logo.png" alt="image" /></a>
+            </div>
+            <div class="col-8">
+              <nav class="navbar">
+                <div class="dropdown">
+                  <button class="dropdown-button dropdown-button--current">Home</button>
+                  <div class="dropdown-content">
+                    <a class="dropdown-content__link current" href="#">Home 1</a>
+                    <a class="dropdown-content__link" href="#">Home 2</a>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <button class="dropdown-button">Pages</button>
+                  <div class="dropdown-content">
+                    <a class="dropdown-content__link" href="#">About</a>
+                    <a class="dropdown-content__link" href="#">Our Team</a>
+                    <a class="dropdown-content__link" href="#">Team Details</a>
+                    <a class="dropdown-content__link" href="#">Contact</a>
+                    <a class="dropdown-content__link" href="#">Faq’s</a>
+                    <a class="dropdown-content__link" href="#">Pricing</a>
+                    <a class="dropdown-content__link" href="#">Quote</a>
+                    <a class="dropdown-content__link" href="#">404 Page</a>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <button class="dropdown-button">Services</button>
+                  <div class="dropdown-content">
+                    <a class="dropdown-content__link" href="#">Our Services</a>
+                    <a class="dropdown-content__link" href="#">Web Design</a>
+                    <a class="dropdown-content__link" href="#">Web Development</a>
+                    <a class="dropdown-content__link" href="#">Search Engine Optimization</a>
+                    <a class="dropdown-content__link" href="#">Marketing Analysis</a>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <button class="dropdown-button">Projects</button>
+                  <div class="dropdown-content">
+                    <a class="dropdown-content__link" href="#">Our Project 1</a>
+                    <a class="dropdown-content__link" href="#">Our Project 2</a>
+                    <a class="dropdown-content__link" href="#">Project Single</a>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <button class="dropdown-button">Blogs</button>
+                  <div class="dropdown-content">
+                    <a class="dropdown-content__link" href="#">Our Blog 1</a>
+                    <a class="dropdown-content__link" href="#">Our Blog 2</a>
+                    <a class="dropdown-content__link" href="#">Blog Standard</a>
+                    <a class="dropdown-content__link" href="#">Blog Details 1</a>
+                    <a class="dropdown-content__link" href="#">Blog Details 2</a>
+                  </div>
+                </div>
+                <img class="navbar-search" src="img/main/search-icon.svg" alt="image" />
+                <div class="navbar-burger">
+                  <span class="navbar-burger__layer navbar-burger__top"></span>
+                  <span class="navbar-burger__layer navbar-burger__middle"></span>
+                  <span class="navbar-burger__layer navbar-burger__bottom"></span>
+                </div>
+                <button class="button"><span>Start project</span></button>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-8 col-lg-5">
+            <div class="title">
+              <h1 class="title-header">Digital agency with a passion for marketing</h1>
+              <p class="title-subheader">
+                Lorem ipsum indolor st amet, cm ilmetctetur adipis locing elit, sedi din usim
+                indolor st ilmes.
+              </p>
+              <button class="button"><span>Get A Quote</span></button>
+              <canvas class="zigzag zigzag-blue"></canvas>
+            </div>
+          </div>
+          <div class="col-sm-4 col-lg-7 d-none d-sm-block">
+            <div class="images">
+              <img src="img/main/1.png" alt="image" class="images-big" />
+              <img src="img/main/2.png" alt="image" class="images-small" />
+              <canvas class="zigzag zigzag-pink"></canvas>
+              <canvas class="zigzag zigzag-blue"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="features">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-10 offset-sm-1 col-md-4 offset-md-0">
+            <div class="features-block">
+              <div class="features-image orange">
+                <img src="img/features/1.png" alt="image" />
+              </div>
+              <h2 class="features-header">Website Design & Development</h2>
+              <p class="features-text">
+                Lorem ipsum indolor st amet, etctetur adipis locing elit, sedi m indolor st ilmes.
+              </p>
+              <button class="features-button">></button>
+              <canvas class="zigzag zigzag-pink"></canvas>
+            </div>
+          </div>
+          <div class="col-12 col-sm-10 offset-sm-1 col-md-4 offset-md-0">
+            <div class="features-block">
+              <div class="features-image blue">
+                <img src="img/features/2.png" alt="image" />
+              </div>
+              <h2 class="features-header">Digital Strategy Creation</h2>
+              <p class="features-text">
+                Lorem ipsum indolor st amet, etctetur adipis locing elit, sedi m indolor st ilmes.
+              </p>
+              <button class="features-button">></button>
+              <canvas class="zigzag zigzag-pink"></canvas>
+            </div>
+          </div>
+          <div class="col-12 col-sm-10 offset-sm-1 col-md-4 offset-md-0">
+            <div class="features-block">
+              <div class="features-image cyan">
+                <img src="img/features/3.png" alt="image" />
+              </div>
+              <h2 class="features-header">Keyword Research & Link Building</h2>
+              <p class="features-text">
+                Lorem ipsum indolor st amet, etctetur adipis locing elit, sedi m indolor st ilmes.
+              </p>
+              <button class="features-button">></button>
+              <canvas class="zigzag zigzag-pink"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="award">
+      <div class="container"></div>
+    </section>
+
+    <button class="scrollup">&uArr;</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="wow.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

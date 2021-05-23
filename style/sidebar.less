@@ -1,0 +1,76 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -35rem;
+  width: 35rem;
+  height: 100%;
+  padding: 4rem 3rem;
+  background-color: #fff;
+  box-shadow: 5px 0 15px 0 rgba(0, 0, 0, 0.219);
+  opacity: 0;
+  transition: 0.5s;
+  z-index: 99;
+
+  &-logo {
+    img {
+      width: 20rem;
+    }
+  }
+
+  &-text {
+    display: block;
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    color: #666;
+    text-decoration: none;
+    line-height: 1.8;
+
+    &:hover {
+      color: #666;
+    }
+  }
+
+  &-header {
+    position: relative;
+    margin-top: 4rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 3rem;
+      height: 0.3rem;
+      background-color: #f42b32;
+    }
+  }
+
+  &-social {
+    margin-top: 4rem;
+
+    &__link {
+      margin: 0.5rem;
+      padding: 1.7rem 1.5rem;
+      border-radius: 50%;
+      background-color: #f4faff;
+      text-decoration: none;
+      transition: 0.5s;
+
+      &:hover {
+        background-color: #f42b32;
+
+        img {
+          filter: invert(100%) brightness(200%);
+          transform: rotateY(180deg);
+        }
+      }
+
+      img {
+        width: 1.7rem;
+        transition: 0.5s;
+      }
+    }
+  }
+}

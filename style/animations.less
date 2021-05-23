@@ -1,0 +1,55 @@
+@keyframes headerScroll {
+  from {
+    top: -7rem;
+  }
+  to {
+    top: 0;
+  }
+}
+
+@keyframes mainHeaderScroll {
+  from {
+    top: -10rem;
+  }
+  to {
+    top: 0;
+  }
+}
+
+@keyframes mainZigzagLeft {
+  from {
+    left: -10rem;
+  }
+  to {
+    left: -25rem;
+  }
+}
+
+@keyframes mainZigzagGrayscale {
+  from {
+    filter: none;
+  }
+  to {
+    filter: grayscale(100%) invert(20%);
+  }
+}
+
+@keyframes featuresZigzag {
+  from {
+    right: -8rem;
+  }
+  to {
+    right: 2rem;
+  }
+}
+
+@media (max-width: 991px) {
+  @keyframes featuresZigzag {
+    from {
+      right: -6rem;
+    }
+    to {
+      right: 0;
+    }
+  }
+}
