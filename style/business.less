@@ -1,0 +1,95 @@
+.business {
+  position: relative;
+  background: url(../img/bg-business.jpg) no-repeat center;
+  background-size: cover;
+  height: 85rem;
+
+  &-title {
+    position: absolute;
+    top: -25rem;
+    left: -25rem;
+    padding: 35rem 0 15rem 35rem;
+    width: 110rem;
+    border-right: 5rem solid #1d1b59;
+    border-radius: 0 100% 100% 100%;
+    background-color: #0a084b;
+    clip-path: inset(25rem 0 -15rem 0);
+  }
+
+  &-header {
+    margin-bottom: 3rem;
+    font-size: 5rem;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.3;
+  }
+
+  &-numbers {
+    font-size: 8rem;
+    color: #f84d55;
+
+    &__counter {
+      display: inline-block;
+    }
+
+    &__text {
+      display: inline-block;
+      width: 15rem;
+      font-size: 2rem;
+      color: #fff;
+      line-height: 1.3;
+      opacity: 0.8;
+    }
+  }
+
+  &-button {
+    position: absolute;
+    left: 35rem;
+    bottom: -7rem;
+    padding: 5rem;
+    border: none;
+    border-radius: 50%;
+    background-color: #f84d55;
+    transition: 0.5s;
+
+    img {
+      transition: 0.5s;
+    }
+
+    &__circle {
+      position: absolute;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      opacity: 0.8;
+
+      &:nth-of-type(1) {
+        top: -0.6rem;
+        left: -0.6rem;
+        padding: 7.8rem;
+        animation: businessButtonCircle_1 0.8s infinite linear;
+      }
+
+      &:nth-of-type(2) {
+        top: -2rem;
+        left: -2rem;
+        padding: 9.2rem;
+        animation: businessButtonCircle_2 0.8s infinite linear;
+      }
+
+      &:nth-of-type(3) {
+        top: -2.7rem;
+        left: -2.7rem;
+        padding: 9.9rem;
+        animation: businessButtonCircle_3 0.8s infinite linear;
+      }
+    }
+
+    &:hover img {
+      filter: invert(85%);
+    }
+
+    &:hover span {
+      animation-play-state: paused;
+    }
+  }
+}

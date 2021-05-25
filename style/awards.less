@@ -1,0 +1,73 @@
+.awards {
+  padding-top: 0;
+
+  &-header {
+    margin: 0 25rem 7rem 25rem;
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: #232d47;
+    text-align: center;
+  }
+
+  &-text {
+    font-size: 1.7rem;
+    color: #666;
+    line-height: 1.8;
+  }
+
+  &-button {
+    margin-top: 4rem;
+    &::before {
+      background-color: #232d47;
+    }
+  }
+
+  &-links {
+    margin-top: 1rem;
+    margin-left: 7rem;
+  }
+
+  &-link {
+    position: relative;
+    display: block;
+    padding: 3rem 0 3rem 2rem;
+    font-size: 1.7rem;
+    color: #232d47;
+    font-weight: 700;
+    text-decoration: none;
+    border-top: 1px solid #ddd;
+    transition: 0.5s;
+
+    &:hover {
+      color: #f42b32;
+
+      &::before {
+        width: 100%;
+      }
+
+      &::after {
+        color: #f42b32;
+      }
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 0.3rem;
+      background-color: #f42b32;
+      transition: 0.5s;
+    }
+
+    &::after {
+      content: '\279C';
+      position: absolute;
+      top: 3rem;
+      right: 2rem;
+      color: #232d47;
+      transition: 0.5s;
+    }
+  }
+}

@@ -9,8 +9,6 @@ let burgerBottom = document.querySelector('.header-burger__bottom')
 // header navbar
 let header = document.querySelector('header')
 let navbar = document.querySelector('.header-list')
-let navbarSummary = document.querySelector('.header-list-summary')
-let navbarSummaryBtn = document.querySelector('.header-list-summary__button')
 // main-header
 let mainHeader = document.querySelector('.main-header')
 // scroll up button
@@ -104,20 +102,46 @@ document.addEventListener('click', (event) => {
   }
 
   // navbar details button
-  if (target === navbarSummaryBtn || target === navbarSummary) {
-    if (target.closest('details').hasAttribute('open')) {
-      navbarSummaryBtn.innerHTML = '&#8897;'
+  if (target.classList.contains('header-list-summary')) {
+    if (target.closest('.header-list-block').hasAttribute('open')) {
+      target.firstElementChild.innerHTML = '&#8897;'
     } else {
-      navbarSummaryBtn.innerHTML = '&#8896;'
+      target.firstElementChild.innerHTML = '&#8896;'
+    }
+  } else if (target.classList.contains('header-list-summary__button')) {
+    if (target.closest('.header-list-block').hasAttribute('open')) {
+      target.innerHTML = '&#8897;'
+    } else {
+      target.innerHTML = '&#8896;'
     }
 
-    if (target === navbarSummaryBtn) {
-      target.closest('details').toggleAttribute('open')
-    }
+    target.closest('.header-list-block').toggleAttribute('open')
   }
 
   // scroll up button
   if (target === scrollUp) {
     window.scroll(0, 0)
   }
+})
+
+// business numbers counter
+const counters = document.querySelectorAll('.counter')
+const speed = 100
+
+counters.forEach((counter) => {
+  const updateCount = () => {
+    const target = +counter.dataset.target
+    const count = +counter.textContent
+    const inc = Math.ceil(target / speed)
+    const step = target === 20 ? 80 : target === 150 ? 20 : null
+
+    if (count < target) {
+      counter.textContent = count + inc
+      setTimeout(updateCount, step)
+    } else {
+      counter.textContent = target
+    }
+  }
+
+  updateCount()
 })

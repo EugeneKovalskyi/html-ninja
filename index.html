@@ -76,12 +76,12 @@
         </div>
       </div>
       <div class="header-list">
-        <details class="header-list-block current">
-          <summary class="header-list-summary">
+        <details class="header-list-block">
+          <summary class="header-list-summary current">
             Home<button class="header-list-summary__button">&#8897;</button>
           </summary>
           <div class="header-list-content">
-            <a href="#">Home 1</a>
+            <a class="current" href="#">Home 1</a>
             <a href="#">Home 2</a>
           </div>
         </details>
@@ -241,7 +241,7 @@
               <p class="features-text">
                 Lorem ipsum indolor st amet, etctetur adipis locing elit, sedi m indolor st ilmes.
               </p>
-              <button class="features-button">></button>
+              <button class="features-button">&#10095;</button>
               <canvas class="zigzag zigzag-pink"></canvas>
             </div>
           </div>
@@ -254,7 +254,7 @@
               <p class="features-text">
                 Lorem ipsum indolor st amet, etctetur adipis locing elit, sedi m indolor st ilmes.
               </p>
-              <button class="features-button">></button>
+              <button class="features-button">&#10095;</button>
               <canvas class="zigzag zigzag-pink"></canvas>
             </div>
           </div>
@@ -267,7 +267,7 @@
               <p class="features-text">
                 Lorem ipsum indolor st amet, etctetur adipis locing elit, sedi m indolor st ilmes.
               </p>
-              <button class="features-button">></button>
+              <button class="features-button">&#10095;</button>
               <canvas class="zigzag zigzag-pink"></canvas>
             </div>
           </div>
@@ -275,11 +275,65 @@
       </div>
     </section>
 
-    <section class="award">
-      <div class="container"></div>
+    <section class="awards">
+      <div class="container">
+        <h2 class="awards-header">
+          Award-winning digital marketing agency, delivering outstanding results
+        </h2>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="awards-title">
+              <p class="awards-text">
+                Praesent sollicitudin felis a ornare volutpat. Nullam males uada sem sit amet semper
+                tristique. Donec nec neque lectus. Nunc mattis, lect us eu lacinia pretium, nisl
+                nisi interdum tortor, id lacinia massa purus feugiat nunc. Pellentesue ligula
+                pellentesque, gravida nisi ac, facilisis sapien Dotas a metus eu, efficitur sodales.
+                <br />
+                Iterdum tortor, id lacinia massa purus feugiat nunc. Pellique aliquet ssa purus
+                feugiat nunc. Pellentes ue ligula pellent.
+              </p>
+              <button class="awards-button button"><span>Start project</span></button>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="awards-links">
+              <a href="#" class="awards-link">Inspiration Design</a>
+              <a href="#" class="awards-link">Development</a>
+              <a href="#" class="awards-link">Digital Marketing</a>
+              <a href="#" class="awards-link">Technical</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <button class="scrollup">&uArr;</button>
+    <section class="business">
+      <div class="container">
+        <div class="business-title">
+          <h2 class="business-header">
+            We use our expertise and knowledge to take your business further.
+          </h2>
+          <div class="business-numbers">
+            <div class="business-numbers__counter">
+              <span class="counter" data-target="20">0</span><sup>+</sup
+              ><span class="business-numbers__text">employees in a business</span>
+            </div>
+            <div class="business-numbers__counter">
+              <span class="counter" data-target="150">0</span><sup>+</sup
+              ><span class="business-numbers__text">projects for software</span>
+            </div>
+          </div>
+          <button class="business-button">
+            <img src="img/play.png" alt="image" />
+            <span class="business-button__circle"></span>
+            <span class="business-button__circle"></span>
+            <span class="business-button__circle"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <button class="scrollup">&uarr;</button>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>

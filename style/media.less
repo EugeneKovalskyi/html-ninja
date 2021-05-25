@@ -1,11 +1,29 @@
 @media (max-width: 1199px) {
   .header {
     display: block;
+
+    &-burger {
+      height: 2rem;
+    }
   }
 
   .main {
     &-header {
       display: none;
+    }
+  }
+
+  .awards {
+    &-header {
+      margin-left: 12rem;
+      margin-right: 12rem;
+    }
+  }
+
+  .business {
+    &-title {
+      padding-left: 30rem;
+      width: 105rem;
     }
   }
 
@@ -69,6 +87,38 @@
       min-height: 29.5rem;
     }
   }
+
+  .awards {
+    &-header {
+      margin: 0 0 5rem 0;
+    }
+
+    &-button {
+      margin-top: 2rem;
+    }
+
+    &-links {
+      margin-left: 1rem;
+    }
+  }
+
+  .business {
+    &-title {
+      padding-bottom: 5rem;
+      width: 90rem;
+    }
+
+    &-numbers {
+      &__counter {
+        display: block;
+      }
+    }
+
+    &-button {
+      left: 65rem;
+      bottom: 5rem;
+    }
+  }
 }
 
 @media (max-width: 767px) {
@@ -124,6 +174,52 @@
       }
     }
   }
+
+  .awards {
+    &-header {
+      margin-bottom: 3rem;
+      font-size: 3.5rem;
+    }
+
+    &-title {
+      text-align: center;
+    }
+
+    &-text {
+      text-align-last: left;
+    }
+
+    &-links {
+      margin-top: 5rem;
+      margin-left: 0;
+    }
+  }
+
+  .business {
+    &-title {
+      padding-top: 30rem;
+      padding-bottom: 15rem;
+      width: 75rem;
+    }
+
+    &-header {
+      font-size: 3.5rem;
+    }
+
+    &-numbers {
+      font-size: 6rem;
+
+      &__text {
+        width: 20rem;
+        font-size: 1.5rem;
+      }
+    }
+
+    &-button {
+      left: 35rem;
+      bottom: -5rem;
+    }
+  }
 }
 
 @media (max-width: 575px) {
@@ -134,6 +230,44 @@
 
     &-link {
       display: none;
+    }
+  }
+
+  .main {
+    .title {
+      text-align: center;
+
+      &-subheader {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+
+  .business {
+    &-header {
+      margin-bottom: 2rem;
+      font-size: 2.5rem;
+    }
+
+    &-title {
+      padding-left: 27rem;
+      width: 50rem;
+      border-right-width: 2rem;
+    }
+
+    &-numbers {
+      font-size: 4rem;
+
+      &__text {
+        margin-left: 1rem;
+        width: 10rem;
+        font-size: 1.2rem;
+      }
+    }
+
+    &-button {
+      left: 30rem;
+      bottom: -3rem;
     }
   }
 }

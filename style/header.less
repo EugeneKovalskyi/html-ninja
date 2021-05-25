@@ -53,6 +53,7 @@
   &-burger {
     position: relative;
     display: inline-block;
+    top: 0.6rem;
     width: 2.5rem;
     height: 1.4rem;
     cursor: pointer;
@@ -69,7 +70,7 @@
       top: 0;
 
       &--onclick {
-        top: 0.7rem;
+        top: 0.8rem;
         transform: rotate(45deg);
       }
     }
@@ -86,7 +87,7 @@
       top: 1.4rem;
 
       &--onclick {
-        top: 0.7rem;
+        top: 0.8rem;
         transform: rotate(-45deg);
       }
     }
@@ -123,10 +124,8 @@
         text-decoration: none;
       }
 
-      &.current {
-        summary {
-          color: #f84d55;
-        }
+      .current {
+        color: #f84d55;
       }
     }
 
