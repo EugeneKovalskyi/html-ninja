@@ -1,18 +1,23 @@
 // canvas zigzag
-let canvasArray = document.querySelectorAll('.zigzag')
+const canvasArray = document.querySelectorAll('.zigzag')
 // sidebar
-let sidebar = document.querySelector('.sidebar')
+const sidebar = document.querySelector('.sidebar')
 // burger
-let burgerTop = document.querySelector('.header-burger__top')
-let burgerMiddle = document.querySelector('.header-burger__middle')
-let burgerBottom = document.querySelector('.header-burger__bottom')
+const burgerTop = document.querySelector('.header-burger__top')
+const burgerMiddle = document.querySelector('.header-burger__middle')
+const burgerBottom = document.querySelector('.header-burger__bottom')
 // header navbar
-let header = document.querySelector('header')
-let navbar = document.querySelector('.header-list')
+const header = document.querySelector('header')
+const navbar = document.querySelector('.header-list')
 // main-header
-let mainHeader = document.querySelector('.main-header')
+const mainHeader = document.querySelector('.main-header')
 // scroll up button
-let scrollUp = document.querySelector('.scrollup')
+const scrollUp = document.querySelector('.scrollup')
+// load more
+const loadmoreButton = document.querySelector('.cases-button')
+const loadmoreButtonSpan = document.querySelector('.cases-button__span')
+const casesBlocksArray = document.querySelectorAll('.cases-block')
+let visibleBlocksCount = 7
 
 // canvas zigzag rendering
 for (let canvas of canvasArray) {
@@ -122,12 +127,26 @@ document.addEventListener('click', (event) => {
   if (target === scrollUp) {
     window.scroll(0, 0)
   }
+
+  // load more functionality
+  if (target === loadmoreButton || target === loadmoreButtonSpan) {
+    for (let i = 0; i < 3; i++) {
+      if (casesBlocksArray[visibleBlocksCount]) {
+        casesBlocksArray[visibleBlocksCount].style.display = 'block'
+        casesBlocksArray[visibleBlocksCount].style.animation = 'casesLoadmore 0.5s'
+        visibleBlocksCount++
+      }
+
+      if (visibleBlocksCount === casesBlocksArray.length) {
+        loadmoreButton.style.display = 'none'
+      }
+    }
+  }
 })
 
 // business numbers counter
 const counters = document.querySelectorAll('.counter')
 const speed = 100
-
 counters.forEach((counter) => {
   const updateCount = () => {
     const target = +counter.dataset.target
@@ -144,4 +163,37 @@ counters.forEach((counter) => {
   }
 
   updateCount()
+})
+
+// strategy-slider
+$('.strategy-slider').slick({
+  infinite: true,
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  arrows: false,
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      },
+    },
+
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      },
+    },
+
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
 })

@@ -27,6 +27,35 @@
     }
   }
 
+  .cases {
+    &-subheader {
+      margin: 1.5rem 30rem;
+    }
+
+    &-title {
+      padding: 2rem 1rem;
+
+      &__link {
+        font-size: 2.2rem;
+      }
+    }
+  }
+
+  .strategy {
+    &-subheader {
+      margin: 1.5rem 20rem;
+    }
+
+    &-img {
+      top: 5rem;
+      left: -30%;
+    }
+
+    &-block {
+      padding: 3rem;
+    }
+  }
+
   .scroll-up {
     padding: 0 0.9rem 0.2rem 0.9rem;
     font-size: 1.7rem;
@@ -117,6 +146,56 @@
     &-button {
       left: 65rem;
       bottom: 5rem;
+    }
+  }
+
+  .cases {
+    &-subheader {
+      margin: 1rem 3rem;
+    }
+
+    &-title {
+      left: -100%;
+      padding: 1.5rem 1rem;
+      max-width: none;
+
+      &__link {
+        font-size: 1.8rem;
+      }
+
+      &__description {
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  .strategy {
+    &-subheader {
+      margin: 1.5rem 10rem;
+    }
+
+    &-wrap {
+      margin-top: 4rem;
+    }
+
+    &-img {
+      position: relative;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &-img-bg {
+      display: none;
+    }
+
+    &-content {
+      margin-top: 5rem;
+      grid-gap: 3rem;
+    }
+
+    &-block:nth-of-type(n) {
+      margin: 0;
     }
   }
 }
@@ -218,6 +297,76 @@
     &-button {
       left: 35rem;
       bottom: -5rem;
+      transform: scale(0.8);
+    }
+  }
+
+  .cases {
+    &-header {
+      font-size: 3.5rem;
+    }
+
+    &-subheader {
+      margin: 1rem 9rem;
+    }
+
+    .zigzag {
+      margin-bottom: 2rem;
+    }
+
+    &-content {
+      grid-gap: 3rem;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-flow: row dense;
+    }
+
+    &-block {
+      &:nth-of-type(2) {
+        grid-column: span 2;
+      }
+
+      &:nth-of-type(6) {
+        grid-column: span 2;
+      }
+    }
+
+    &-title {
+      padding: 2rem 1rem;
+      max-width: none;
+
+      &__link {
+        font-size: 2.2rem;
+      }
+
+      &__description {
+        margin-top: 0.5rem;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .strategy {
+    padding-bottom: 7rem;
+
+    &-header {
+      font-size: 3.5rem;
+    }
+
+    &-subheader {
+      margin: 1.5rem 0;
+    }
+
+    &-img {
+      width: 100%;
+      height: 100%;
+    }
+
+    &-content {
+      grid-gap: 2rem;
+    }
+
+    &-slider {
+      margin-top: 7rem;
     }
   }
 }
@@ -268,6 +417,44 @@
     &-button {
       left: 30rem;
       bottom: -3rem;
+    }
+  }
+
+  .cases {
+    padding-top: 7rem;
+
+    &-subheader {
+      margin: 1.5rem 0;
+    }
+
+    &-content {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    &-block {
+      &:nth-of-type(2) {
+        grid-column: span 1;
+      }
+
+      &:nth-of-type(6) {
+        grid-column: span 1;
+      }
+    }
+
+    &-title {
+      max-height: 60%;
+    }
+  }
+
+  .strategy {
+    &-content {
+      grid-gap: 3rem;
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    &-block {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
     }
   }
 }
