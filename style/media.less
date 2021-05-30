@@ -1,4 +1,9 @@
 @media (max-width: 1199px) {
+  .scroll-up {
+    padding: 0 0.9rem 0.2rem 0.9rem;
+    font-size: 1.7rem;
+  }
+
   .header {
     display: block;
 
@@ -56,9 +61,60 @@
     }
   }
 
-  .scroll-up {
-    padding: 0 0.9rem 0.2rem 0.9rem;
-    font-size: 1.7rem;
+  .squad {
+    .container {
+      margin: 0;
+      max-width: 100%;
+    }
+
+    &-subheader {
+      margin: 1.5rem 30rem;
+    }
+
+    &-block {
+      height: 50rem;
+      transform: scale(0.95);
+
+      &:hover {
+        .squad-img {
+          filter: none;
+        }
+
+        .squad-box::before {
+          background-color: #ddd;
+        }
+
+        .squad-social {
+          right: 50%;
+          transform: translateX(50%);
+        }
+      }
+    }
+
+    &-button {
+      display: none;
+    }
+
+    &-box {
+      height: 36rem;
+    }
+
+    &-social {
+      top: 41rem;
+      right: 50%;
+      opacity: 1;
+      transform: translateX(50%);
+
+      &__link {
+        background-color: #ddd;
+      }
+    }
+  }
+
+  .success {
+    &-title {
+      padding-right: 1rem;
+    }
   }
 }
 
@@ -196,6 +252,47 @@
 
     &-block:nth-of-type(n) {
       margin: 0;
+    }
+  }
+
+  .squad {
+    padding-top: 5rem;
+
+    &-subheader {
+      margin: 1.5rem 15rem;
+    }
+
+    &-block {
+      height: 52rem;
+      transform: scale(1);
+    }
+  }
+
+  .success {
+    padding-top: 5rem;
+
+    &-header {
+      text-align: center;
+    }
+
+    &-subheader {
+      text-align: center;
+    }
+
+    &-title {
+      padding-right: 0;
+    }
+
+    &-img {
+      top: 7rem;
+      transform: none;
+    }
+
+    &-numbers {
+      &__block {
+        margin-top: 3rem;
+        max-width: 33rem;
+      }
     }
   }
 }
@@ -369,6 +466,51 @@
       margin-top: 7rem;
     }
   }
+
+  .squad {
+    &-header {
+      font-size: 3.5rem;
+    }
+
+    &-subheader {
+      margin: 1.5rem 10rem;
+    }
+
+    &-block {
+      height: 48rem;
+      max-width: 65rem;
+    }
+
+    &-img {
+      width: 25rem;
+      height: 25rem;
+    }
+
+    &-box {
+      top: 11.5rem;
+      height: 34rem;
+    }
+
+    &-name {
+      top: 16rem;
+    }
+
+    &-social {
+      top: 36rem;
+    }
+  }
+
+  .success {
+    &-header {
+      font-size: 3.5rem;
+    }
+
+    &-numbers {
+      &__block {
+        max-width: none;
+      }
+    }
+  }
 }
 
 @media (max-width: 575px) {
@@ -455,6 +597,12 @@
     &-block {
       padding-top: 2rem;
       padding-bottom: 2rem;
+    }
+  }
+
+  .squad {
+    &-subheader {
+      margin: 1.5rem 3rem;
     }
   }
 }

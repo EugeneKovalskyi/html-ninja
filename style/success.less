@@ -1,0 +1,159 @@
+.success {
+  padding: 14rem 0;
+
+  &-header {
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: #232d47;
+  }
+
+  &-subheader {
+    margin-top: 3rem;
+    font-size: 2rem;
+    color: #666;
+    line-height: 1.5;
+  }
+
+  &-title {
+    padding-right: 5rem;
+  }
+
+  &-progress {
+    margin-top: 5rem;
+
+    &__block {
+      position: relative;
+      margin-top: 3rem;
+    }
+
+    &__label {
+      font-size: 1.7rem;
+      font-weight: 700;
+      color: #666;
+    }
+
+    &__percent {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: inline-block;
+      font-size: 1.5rem;
+      font-weight: 700;
+
+      &.--blue {
+        color: #354af4;
+      }
+
+      &.--red {
+        color: #f42b32;
+      }
+
+      &.--orange {
+        color: #fd6f03;
+      }
+    }
+
+    &__value {
+      display: block;
+      margin-top: 1rem;
+      width: 100%;
+      height: 0.5rem;
+      appearance: none;
+
+      &::-webkit-progress-bar {
+        border-radius: 5px;
+        background-color: #ddd;
+      }
+
+      &::-webkit-progress-value {
+        border-radius: 5px;
+      }
+
+      &#videoEditing::-webkit-progress-value {
+        background-color: #354af4;
+      }
+
+      &#graphicDesigner::-webkit-progress-value {
+        background-color: #f42b32;
+      }
+
+      &#development::-webkit-progress-value {
+        background-color: #fd6f03;
+      }
+    }
+  }
+
+  &-img {
+    position: relative;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+  }
+
+  &-numbers {
+    margin-top: 10rem;
+    text-align: center;
+
+    &__block {
+      position: relative;
+      padding: 4rem 0;
+      max-width: 25rem;
+      color: #232d47;
+      border: 1px solid #ddd;
+      box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.062);
+      transition: 0.5s;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 100%;
+        background-color: #232d47;
+        transition: 0.5s;
+        z-index: 1;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -0.7rem;
+        left: 50%;
+        width: 2.4rem;
+        height: 1.4rem;
+        background-color: #f84d55;
+        transform: translateX(-50%);
+        transition: 0.5s;
+      }
+
+      &:hover {
+        color: #fff;
+        transform: translateY(-5%);
+
+        &::before {
+          left: 0;
+          width: 100%;
+        }
+
+        &::after {
+          background-color: #232d47;
+        }
+      }
+    }
+
+    &__caption {
+      position: relative;
+      font-size: 1.5rem;
+      font-weight: 500;
+      z-index: 2;
+    }
+
+    span {
+      position: relative;
+      font-size: 5.5rem;
+      font-weight: 700;
+      z-index: 2;
+    }
+  }
+}

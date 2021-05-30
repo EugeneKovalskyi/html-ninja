@@ -144,15 +144,40 @@ document.addEventListener('click', (event) => {
   }
 })
 
-// business numbers counter
+// business + success numbers counter
 const counters = document.querySelectorAll('.counter')
 const speed = 100
+
 counters.forEach((counter) => {
   const updateCount = () => {
     const target = +counter.dataset.target
     const count = +counter.textContent
     const inc = Math.ceil(target / speed)
-    const step = target === 20 ? 80 : target === 150 ? 20 : null
+    let step = null
+
+    switch (target) {
+      case 12:
+        step = 140
+        break
+      case 14:
+        step = 120
+        break
+      case 20:
+        step = 80
+        break
+      case 30:
+        step = 50
+        break
+      case 110:
+        step = 25
+        break
+      case 150:
+        step = 20
+        break
+      default:
+        step = speed
+        break
+    }
 
     if (count < target) {
       counter.textContent = count + inc
@@ -164,6 +189,26 @@ counters.forEach((counter) => {
 
   updateCount()
 })
+
+// success progress
+let percentArr = document.querySelectorAll('.success-progress__percent')
+let valueArr = document.querySelectorAll('.success-progress__value')
+
+for (const value of valueArr) {
+  const target = value.value
+  value.value = 0
+  const incrementValue = setInterval(() => {
+    if (value.value < target) {
+      ++value.value
+
+      for (const percent of percentArr) {
+        percent.textContent = `(${percent.nextElementSibling.value}%)`
+      }
+    } else {
+      clearInterval(incrementValue)
+    }
+  }, 10)
+}
 
 // strategy-slider
 $('.strategy-slider').slick({
@@ -190,6 +235,31 @@ $('.strategy-slider').slick({
 
     {
       breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+})
+
+// squad-slider
+$('.squad-slider').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  arrows: false,
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      },
+    },
+
+    {
+      breakpoint: 768,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
