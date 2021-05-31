@@ -116,6 +116,29 @@
       padding-right: 1rem;
     }
   }
+
+  .news {
+    &-subheader {
+      margin: 1.5rem 20rem;
+    }
+
+    &-block {
+      min-height: 43rem;
+    }
+
+    &-title {
+      padding: 2rem;
+      text-align: center;
+    }
+  }
+
+  .footer {
+    &-form {
+      &__input {
+        padding-left: 2rem;
+      }
+    }
+  }
 }
 
 @media (max-width: 991px) {
@@ -292,6 +315,39 @@
       &__block {
         margin-top: 3rem;
         max-width: 33rem;
+      }
+    }
+  }
+
+  .news {
+    &-subheader {
+      margin: 1.5rem 10rem;
+    }
+
+    &-title {
+      position: initial;
+      width: 100%;
+      text-align: left;
+      border: none;
+      background-color: transparent;
+
+      &::before {
+        content: none;
+      }
+    }
+  }
+
+  .footer {
+    &-form {
+      margin-top: 3rem;
+    }
+
+    &-endnote {
+      text-align: center;
+
+      &__created {
+        margin-top: 5rem;
+        text-align: center;
       }
     }
   }
@@ -508,6 +564,51 @@
     &-numbers {
       &__block {
         max-width: none;
+
+        span {
+          font-size: 4rem;
+        }
+      }
+    }
+  }
+
+  .news {
+    &-header {
+      font-size: 3.5rem;
+    }
+
+    &-subheader {
+      margin: 1.5rem 2rem;
+    }
+
+    &-block {
+      max-width: 85%;
+    }
+  }
+
+  .footer {
+    &-header {
+      max-width: none;
+      font-size: 3.5rem;
+    }
+
+    &-content {
+      margin: 3rem 0;
+    }
+
+    &-social {
+      &__link {
+        margin-bottom: 2rem;
+      }
+    }
+
+    &-form {
+      &__input {
+        padding: 2rem 2rem;
+      }
+
+      &__button {
+        padding: 2.1rem 2rem;
       }
     }
   }
@@ -604,5 +705,16 @@
     &-subheader {
       margin: 1.5rem 3rem;
     }
+  }
+
+  .news {
+    &-subheader {
+      margin: 1.5rem 0;
+    }
+  }
+
+  .footer {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }

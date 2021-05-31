@@ -267,3 +267,27 @@ $('.squad-slider').slick({
     },
   ],
 })
+
+// news-slider
+$('.news-slider').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 2,
+  arrows: false,
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+})

@@ -1,0 +1,143 @@
+.news {
+  background-color: #f7fafc;
+
+  .container {
+    max-width: 119rem;
+  }
+
+  &-header {
+    font-size: 5rem;
+    font-weight: 700;
+    color: #232d47;
+    text-align: center;
+  }
+
+  &-subheader {
+    margin: 1.5rem 25rem;
+    font-size: 1.7rem;
+    color: #666;
+    line-height: 1.8;
+    text-align: center;
+  }
+
+  .zigzag {
+    display: block;
+    margin: 0 auto 5rem auto;
+    transform: scale(0.4);
+  }
+
+  &-block {
+    position: relative;
+    margin: auto;
+    max-width: 90%;
+    min-height: 45rem;
+    overflow: hidden;
+
+    &:hover {
+      .news-title::before {
+        width: 75%;
+        opacity: 1;
+      }
+
+      .news-img {
+        transform: scale(1.1) translateY(-4.5%);
+      }
+    }
+  }
+
+  &-link {
+    text-decoration: none;
+  }
+
+  &-img {
+    width: 100%;
+    transition: 0.5s;
+  }
+
+  &-title {
+    position: absolute;
+    top: 23rem;
+    right: 0;
+    padding: 3rem 4rem;
+    width: 85%;
+    font-weight: 700;
+    border: 1px solid #eee;
+    border-top: none;
+    background-color: #fff;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 0;
+      height: 0.4rem;
+      background-color: #f84d55;
+      transform: translateX(-50%);
+      opacity: 0;
+      transition: 0.5s;
+    }
+
+    &__date {
+      color: #f84d55;
+      font-size: 1.5rem;
+    }
+
+    &__link {
+      text-decoration: none;
+    }
+
+    &__header {
+      margin-top: 1.5rem;
+      font-size: 2.3rem;
+      font-weight: 700;
+      color: #232d47;
+      transition: 0.5s;
+
+      &:hover {
+        color: #f84d55;
+      }
+    }
+
+    &__created {
+      margin-top: 3.5rem;
+      font-size: 1.5rem;
+      color: #aaa;
+    }
+
+    &__author {
+      color: #999;
+      text-decoration: none;
+
+      &:hover {
+        color: #999;
+        text-decoration: underline;
+      }
+    }
+
+    &__comments {
+      position: relative;
+      margin-left: 1rem;
+      padding: 0.7rem 1.5rem;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 50%;
+      background-color: #f84d55;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 1.5rem;
+        left: -0.3rem;
+        width: 2rem;
+        height: 2rem;
+        clip-path: polygon(0% 100%, 40% 45%, 95% 60%, 70% 80%, 40% 90%);
+        background-color: #f84d55;
+      }
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
