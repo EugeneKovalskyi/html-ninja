@@ -1,0 +1,37 @@
+.loading {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  opacity: 1;
+  transition: 1s;
+  z-index: 999;
+
+  &-block {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%);
+  }
+
+  &-snag {
+    display: inline-block;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 0.8rem;
+    background-color: #f84d55;
+
+    &:nth-of-type(1) {
+      animation: 0.8s loading 0s infinite linear alternate;
+    }
+
+    &:nth-of-type(2) {
+      margin: 0 0.2rem;
+      animation: 0.8s loading 0.3s infinite linear alternate;
+    }
+
+    &:nth-of-type(3) {
+      animation: 0.8s loading 0.6s infinite linear alternate;
+    }
+  }
+}

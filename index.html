@@ -25,6 +25,14 @@
     <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
+    <div class="loading">
+      <div class="loading-block">
+        <span class="loading-snag"></span>
+        <span class="loading-snag"></span>
+        <span class="loading-snag"></span>
+      </div>
+    </div>
+
     <button class="scrollup">&uarr;</button>
 
     <div class="sidebar d-none d-xl-block">
@@ -210,21 +218,43 @@
         <div class="row">
           <div class="col-12 col-sm-8 col-lg-5">
             <div class="title">
-              <h1 class="title-header">Digital agency with a passion for marketing</h1>
-              <p class="title-subheader">
+              <h1 class="title-header wow fadeInLeft" data-wow-duration="1s">
+                Digital agency with a passion for marketing
+              </h1>
+              <p
+                class="title-subheader wow fadeInLeft"
+                data-wow-duration="1s"
+                data-wow-delay="0.3s"
+              >
                 Lorem ipsum indolor st amet, cm ilmetctetur adipis locing elit, sedi din usim
                 indolor st ilmes.
               </p>
-              <button class="button"><span>Get A Quote</span></button>
+              <button class="button wow flipInY" data-wow-duration="1s" data-wow-delay="1s">
+                <span>Get A Quote</span>
+              </button>
               <canvas class="zigzag zigzag-blue"></canvas>
             </div>
           </div>
           <div class="col-sm-4 col-lg-7 d-none d-sm-block">
             <div class="images">
-              <img src="img/main/1.png" alt="image" class="images-big" />
-              <img src="img/main/2.png" alt="image" class="images-small" />
-              <canvas class="zigzag zigzag-pink"></canvas>
-              <canvas class="zigzag zigzag-blue"></canvas>
+              <img
+                src="img/main/1.png"
+                alt="image"
+                class="images-big wow zoomIn"
+                data-wow-duration="1s"
+                data-wow-delay="1.5s"
+                data-depth="0.4"
+              />
+              <img
+                src="img/main/2.png"
+                alt="image"
+                class="images-small wow zoomIn"
+                data-wow-duration="1s"
+                data-wow-delay="2s"
+                data-depth="0.8"
+              />
+              <canvas class="zigzag zigzag-pink" data-depth="0.6"></canvas>
+              <canvas class="zigzag zigzag-blue" data-depth="1"></canvas>
             </div>
           </div>
         </div>
@@ -235,7 +265,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12 col-sm-10 offset-sm-1 col-md-4 offset-md-0">
-            <div class="features-block">
+            <div class="features-block wow slideInDown" data-wow-duration="1s">
               <div class="features-image orange">
                 <img src="img/features/1.png" alt="image" />
               </div>
@@ -248,7 +278,7 @@
             </div>
           </div>
           <div class="col-12 col-sm-10 offset-sm-1 col-md-4 offset-md-0">
-            <div class="features-block">
+            <div class="features-block wow slideInDown" data-wow-duration="1s">
               <div class="features-image blue">
                 <img src="img/features/2.png" alt="image" />
               </div>
@@ -261,7 +291,7 @@
             </div>
           </div>
           <div class="col-12 col-sm-10 offset-sm-1 col-md-4 offset-md-0">
-            <div class="features-block">
+            <div class="features-block wow slideInDown" data-wow-duration="1s">
               <div class="features-image cyan">
                 <img src="img/features/3.png" alt="image" />
               </div>
@@ -294,7 +324,9 @@
                 Iterdum tortor, id lacinia massa purus feugiat nunc. Pellique aliquet ssa purus
                 feugiat nunc. Pellentes ue ligula pellent.
               </p>
-              <button class="awards-button button"><span>Start project</span></button>
+              <button class="awards-button button wow bounceInLeft" data-wow-duration="1s">
+                <span>Start project</span>
+              </button>
             </div>
           </div>
           <div class="col-12 col-md-6">
@@ -312,10 +344,10 @@
     <section class="business">
       <div class="container">
         <div class="business-title">
-          <h2 class="business-header">
+          <h2 class="business-header wow fadeInDown" data-wow-duration="1s">
             We use our expertise and knowledge to take your business further.
           </h2>
-          <div class="business-numbers">
+          <div class="business-numbers wow fadeInDown" data-wow-duration="1s">
             <div class="business-numbers__counter">
               <span class="counter" data-target="20">0</span><sup>+</sup
               ><span class="business-numbers__text">employees in a business</span>
@@ -345,7 +377,7 @@
         <div class="cases-content">
           <div class="cases-block">
             <a href="#" class="cases-block__link">
-              <img src="img/cases/1.png" alt="image" class="cases-block__img" />
+              <img src="img/cases/1.png" alt="image" class="cases-block__img" data-depth="0.2" />
             </a>
             <div class="cases-title">
               <a href="#" class="cases-title__link">Built web faster & better</a>
@@ -655,8 +687,9 @@
                     <p class="success-progress__percent --blue"></p>
                     <progress
                       id="videoEditing"
-                      value="50"
+                      value="0"
                       max="100"
+                      data-target="50"
                       class="success-progress__value"
                     ></progress>
                   </div>
@@ -667,8 +700,9 @@
                     <p class="success-progress__percent --red"></p>
                     <progress
                       id="graphicDesigner"
-                      value="70"
+                      value="0"
                       max="100"
+                      data-target="70"
                       class="success-progress__value"
                     ></progress>
                   </div>
@@ -677,8 +711,9 @@
                     <p class="success-progress__percent --orange"></p>
                     <progress
                       id="development"
-                      value="80"
+                      value="0"
                       max="100"
+                      data-target="80"
                       class="success-progress__value"
                     ></progress>
                   </div>
@@ -876,13 +911,13 @@
             </div>
             <div class="col-12 col-lg-6">
               <div class="footer-subscribe">
-                <form action="" class="footer-form">
+                <form action="#" class="footer-form">
                   <label for="subscribe" class="footer-form__label"
                     >Newsletter subscribe get new updates</label
                   >
                   <input
                     id="subscribe"
-                    type="text"
+                    type="email"
                     placeholder="Your email address"
                     class="footer-form__input"
                   />
@@ -925,8 +960,9 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="wow.min.js"></script>
-    <script src="index.js"></script>
+    <script src="script/wow.min.js"></script>
+    <script src="script/index.js" type="module"></script>
   </body>
 </html>
